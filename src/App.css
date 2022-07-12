@@ -7,6 +7,10 @@ body {
   background-color: #f3f3f3;
   transition: all ease;
 }
+a {
+  color: mediumpurple;
+  text-decoration: none;
+}
 
 .app {
   position: relative;
@@ -132,6 +136,16 @@ button:active {
 }
 .dark-mode2 {
   background-color: #020f8e;
+}
+.footer {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: 30px;
 }
 @keyframes error {
   25% {

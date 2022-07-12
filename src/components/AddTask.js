@@ -11,7 +11,7 @@ const AddTask = ({ onAdd }) => {
   const handleChange = function (e) {
     const value = e.target.value;
     const name = e.target.name;
-    console.log(e);
+
     setText((prevText) => {
       return name === "check"
         ? { ...prevText, reminder: e.target.checked }
@@ -40,7 +40,6 @@ const AddTask = ({ onAdd }) => {
     <form className="form" onSubmit={saveTask}>
       <div className="form-control">
         <label htmlFor="text">Task</label>
-
         <input
           type="text"
           name="text"
